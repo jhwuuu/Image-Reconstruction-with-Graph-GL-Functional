@@ -44,7 +44,7 @@ def getPhantom(nx, r = 0.9):
     """
     # mask
     mask = np.zeros((nx,nx))
-    #### disk: generate grid data, disk(center, radius, shape), r是整数：正方形格子；r不是整数：没有四个corner的坐标
+    #### disk: generate grid data, disk(center, radius, shape)
     ii,jj = disk((nx//2,nx//2),r * (nx//2))
     mask[ii,jj] = 1
     
