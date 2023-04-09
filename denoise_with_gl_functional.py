@@ -25,8 +25,6 @@ from skimage.draw import disk
 from scipy import sparse
 # import astra
 # import foam_ct_phantom
-# import sympy as sp
-# import networkx as netx
 
 
 
