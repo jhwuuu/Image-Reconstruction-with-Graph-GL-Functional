@@ -457,7 +457,7 @@ def tune_params_scipy(objective, Jacobian, x0, method_str, sigma, epsilon_range,
                                              options={'maxiter': 200})
             end = datetime.now()
             print("Tuning this image using zero vector used time: {}".format(end - start), end="\n")
-            print('Optimizer exited successfully: ', result.success)
+            print('Optimizer exited successfully: ', result.message)
 
             out_x = np.hstack((out_x, sigma, alpha, epsilon, np.array(result.x)))
 
