@@ -54,6 +54,22 @@ def getNoisyImage(u, sigma):
     return u + sigma * np.random.rand(u.shape[0], u.shape[1])
 
 
+
+def getNoisyImage_Gaussian(u, sigma):
+    """
+    Generate noisy image. Noise are uniformly distributed.
+
+    input:
+        u - ground truth image
+        sigma - noise level
+
+    output:
+        v - noise image as 2d array of shape (nx,nx)
+    """
+    # return u + sigma * np.random.rand(u.shape[0], u.shape[1])
+    return u + np.random.default_rng().normal(0, sigma, (u.shape[0],u.shape[1]))
+
+
 #################### objective function ####################
 
 def getAdjacency_Sparse(nx):
