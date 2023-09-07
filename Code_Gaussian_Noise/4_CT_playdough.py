@@ -1,26 +1,7 @@
 from basic_functions import *
-
-import itertools
 import numpy as np
 import matplotlib.pyplot as plt
-from skimage.filters import threshold_otsu
-from skimage.data import shepp_logan_phantom, binary_blobs
-from skimage.draw import disk
-from scipy import sparse
 import scipy
-from datetime import datetime
-import sympy as sp
-from matplotlib import colors
-
-import GL_3SR
-from numpy import genfromtxt
-import matplotlib.patches as patches
-from mpl_toolkits.axes_grid1 import make_axes_locatable
-
-
-from matplotlib.colors import ListedColormap
-from matplotlib.colors import LinearSegmentedColormap
-
 from flextomo import projector  # Reconstruct
 from flexcalc import process
 import astra
